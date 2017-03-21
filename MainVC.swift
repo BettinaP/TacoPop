@@ -20,6 +20,7 @@ class MainVC: UIViewController, DataServiceDelegate {
         
         ds.delegate = self
         ds.loadDeliciousTacoData() //as soon as data done loading, fire message
+        ds.tacoArray.shuffle() //randomize array
         
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -38,6 +39,7 @@ class MainVC: UIViewController, DataServiceDelegate {
     
     func deliciousTacoDataLoaded() {
         print("delicious taco data loaded")
+        collectionView.reloadData() // not really necessary here since everything is stored locally but if we were making network call or connecting to Firebase, would need to reload data because once async call is done, you can let your other classes know data loaded via this delegate method. Or if incorporated activity spinner, delegate method fires and you'd stop activity spinned and reload collection view.
     }
    
 
@@ -67,10 +69,12 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource,UICollect
         return cell
     }
     
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//
-//    }
-//    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) as? TacoCell {
+            cell.shake()
+        }
+    }
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         return CGSize(width: 95, height: 95)

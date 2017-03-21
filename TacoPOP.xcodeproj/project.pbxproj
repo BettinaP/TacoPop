@@ -22,6 +22,7 @@
 		DEB67A081E80EDF300705FDF /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB67A071E80EDF300705FDF /* NibLoadableView.swift */; };
 		DEB67A0A1E80EE6200705FDF /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB67A091E80EE6200705FDF /* UICollectionView+Ext.swift */; };
 		DEB67A0C1E80F4BD00705FDF /* MutableCollection + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB67A0B1E80F4BD00705FDF /* MutableCollection + Ext.swift */; };
+		DEB67A0E1E80F93800705FDF /* Shakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB67A0D1E80F93800705FDF /* Shakeable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		DEB67A071E80EDF300705FDF /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		DEB67A091E80EE6200705FDF /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
 		DEB67A0B1E80F4BD00705FDF /* MutableCollection + Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MutableCollection + Ext.swift"; sourceTree = "<group>"; };
+		DEB67A0D1E80F93800705FDF /* Shakeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shakeable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				DEB679F91E80DC0400705FDF /* DropShadow.swift */,
 				DEB67A051E80ECC900705FDF /* ReusableView.swift */,
 				DEB67A071E80EDF300705FDF /* NibLoadableView.swift */,
+				DEB67A0D1E80F93800705FDF /* Shakeable.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				DEB67A001E80E26500705FDF /* DataService.swift in Sources */,
 				DEB679FE1E80DE2100705FDF /* Taco.swift in Sources */,
 				DEB679FC1E80DD0100705FDF /* HeaderView.swift in Sources */,
+				DEB67A0E1E80F93800705FDF /* Shakeable.swift in Sources */,
 				DEB67A0C1E80F4BD00705FDF /* MutableCollection + Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
